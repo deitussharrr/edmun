@@ -29,5 +29,18 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
-  }
+  },
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deitussharrr/edmun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deitussharrr/edmun/issues"
+  },
+  "homepage": "https://github.com/deitussharrr/edmun#readme",
+  "description": ""
 }
