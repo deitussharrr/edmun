@@ -102,9 +102,7 @@ function App() {
           </a>
           <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
         </div>
-      </header>
-
-      {/* About Section */}
+      </header>... {/* About Section */}
       <section id="about" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">
@@ -171,9 +169,7 @@ function App() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Footer */}
+      </section>... {/* Footer */}
       <footer className="py-12 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
