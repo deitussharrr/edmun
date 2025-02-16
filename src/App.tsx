@@ -144,7 +144,7 @@ function App() {
             <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
             <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
               <video className="w-full h-full object-cover" controls autoPlay loop muted>
-                <source src="/aftermovie.mp4" type="video/mp4" />
+                <source src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/aftermovie-zQceoljO0ANvt17OtBDQS2lIrkSYue.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
