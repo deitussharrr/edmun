@@ -2,7 +2,58 @@
 
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, Award, Film, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
-import Link from 'next/link'; // Import the Link component
+
+const committees = [
+  {
+    name: 'AIPPM (ALL INDIA POLITICAL PARTIES MEET)',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'US SENATE (HAS 4 CHAIRPERSONS)',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'UNGA (UNITED NATIONS GENERAL ASSEMBLY)',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'UNTAC (United Nations Transitional Authority in Cambodia)',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'National Economic Council',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'Nuclear Emergency Session',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+  {
+    name: 'C-34',
+    logo: 'https://via.placeholder.com/150',
+    chairperson: 'Chairperson Name',
+    viceChairperson: 'Vice Chairperson Name',
+    director: 'Director Name',
+  },
+];
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -55,10 +106,6 @@ function App() {
             <a href="#venue" className="text-white hover:text-white/80 transition-colors block py-2">
               Venue
             </a>
-            {/* ADDED COMMITTEES LINK HERE */}
-            <Link href="/committees.tsx" className="text-white hover:text-white/80 transition-colors block py-2">
-              Committees
-            </Link>
             <a
               href="#register"
               className="futuristic-button bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 block text-center mt-4"
@@ -146,6 +193,45 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
+                <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
+                    <iframe src="https://player.vimeo.com/video/1057277850?h=71bf3941bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                    frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+                    style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} 
+                    title="aftermovie">
+                    </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Committees Section */}
+      <section id="committees" className="py-20 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {committees.map((committee, index) => (
+              <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
+                <img src={committee.logo} alt={committee.name} className="w-24 h-24 mx-auto mb-6" />
+                <h3 className="text-2xl font-semibold mb-4 text-center">{committee.name}</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <Users className="w-6 h-6 mr-3" />
+                    <span>Chairperson: {committee.chairperson}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Award className="w-6 h-6 mr-3" />
+                    <span>Vice Chairperson: {committee.viceChairperson}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Globe className="w-6 h-6 mr-3" />
+                    <span>Director: {committee.director}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -167,6 +253,12 @@ function App() {
                   Get Directions
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
+              </div>
+              <div className="bg-white/5 h-64 md:h-auto">
+                {/* Replace with actual venue image */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <MapPin className="w-16 h-16 text-white opacity-40 animate-float" />
+                </div>
               </div>
             </div>
           </div>
