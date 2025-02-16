@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, Award, Film, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'; // Import the Link component
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,11 +23,6 @@ function App() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
-  }
-
-  const handleCommitteesClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    router.push('/committees')
   }
 
   return (
@@ -62,9 +55,10 @@ function App() {
             <a href="#venue" className="text-white hover:text-white/80 transition-colors block py-2">
               Venue
             </a>
-            <a href="#" onClick={handleCommitteesClick} className="text-white hover:text-white/80 transition-colors block py-2">
+            {/* ADDED COMMITTEES LINK HERE */}
+            <Link href="/committees.tsx" className="text-white hover:text-white/80 transition-colors block py-2">
               Committees
-            </a>
+            </Link>
             <a
               href="#register"
               className="futuristic-button bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 block text-center mt-4"
