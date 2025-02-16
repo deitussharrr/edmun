@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, Award, Film, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
+import Link from 'next/link'; // Import the Link component
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -29,7 +30,7 @@ function App() {
       {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled? "bg-[#002211]/90 backdrop-blur-md py-4" : "py-6"
+          scrolled ? "bg-[#002211]/90 backdrop-blur-md py-4" : "py-6"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
@@ -39,7 +40,7 @@ function App() {
           </div>
           <div>
             <button onClick={toggleMenu} className="text-white z-50 relative">
-              {menuOpen? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -54,6 +55,10 @@ function App() {
             <a href="#venue" className="text-white hover:text-white/80 transition-colors block py-2">
               Venue
             </a>
+            {/* ADDED COMMITTEES LINK HERE */}
+            <Link href="/committees" className="text-white hover:text-white/80 transition-colors block py-2">
+              Committees
+            </Link>
             <a
               href="#register"
               className="futuristic-button bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 block text-center mt-4"
@@ -141,17 +146,6 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
-            <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
-              <video className="w-full h-full object-cover" controls autoPlay loop muted>
-                <source src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/aftermovie-zQceoljO0ANvt17OtBDQS2lIrkSYue.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-              <div className="w-full h-full flex items-center justify-center bg-white/5">
-                <Film className="w-16 h-16 text-white animate-pulse" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -173,12 +167,6 @@ function App() {
                   Get Directions
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
-              </div>
-              <div className="bg-white/5 h-64 md:h-auto">
-                {/* Replace with actual venue image */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <MapPin className="w-16 h-16 text-white opacity-40 animate-float" />
-                </div>
               </div>
             </div>
           </div>
