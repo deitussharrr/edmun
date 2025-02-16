@@ -132,7 +132,7 @@ function Home({ scrolled, isMobileMenuOpen, setIsMobileMenuOpen }: HomeProps) {
           <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
             Chennai's Premier Model United Nations Conference
             <br />
-            <span className="text-sm opacity-80">Shaping Tomorrow's Leaders Today</span>
+            <span className="text-sm opacity-80">Humble aid to save the Circuit</span>
           </p>
           <a
             href="#register"
@@ -155,7 +155,7 @@ function Home({ scrolled, isMobileMenuOpen, setIsMobileMenuOpen }: HomeProps) {
                 Edifice Enterprises was founded by Arjun Krishna with a vision to revitalize the MUN culture in Chennai's educational circuit. In response to the post-pandemic decline in quality MUN experiences, Edifice emerged as a beacon of excellence in the domain.
               </p>
               <p className="text-lg leading-relaxed">
-                What sets Edifice apart is its exceptional team - a collective of passionate individuals with over 800 MUNs of combined experience. This wealth of expertise enables us to understand the nuances of Model United Nations conferences and deliver experiences that truly enhance participants' skills and understanding.
+                What sets Edifice apart is its exceptional team - a collective of passionate individuals with over 400 MUNs of combined experience. This wealth of expertise enables us to understand the nuances of Model United Nations conferences and deliver experiences that truly enhance participants' skills and understanding.
               </p>
               <p className="text-lg leading-relaxed">
                 Our commitment goes beyond just organizing events. We're dedicated to nurturing the next generation of diplomatic leaders by maintaining high standards and introducing innovative approaches to MUN conferences.
