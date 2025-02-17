@@ -8,75 +8,75 @@ const committees = [
     name: "AIPPM (ALL INDIA POLITICAL PARTIES MEET)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./AIPPM-1.jpg" },
-      { name: "Chairperson 2", image: "./AIPPM-2.jpg" },
-      { name: "Chairperson 3", image: "./AIPPM-3.jpg" },
+      { name: "Ravivatsan", position: "Chairperson", image: "./Ravi Vatsan.jpg" },
+      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "./Sanjal Senthilnaathan.jpg" },
+      { name: "Ritesh", position: "Director", image: "./Ritesh.jpg" },
     ],
   },
   {
     name: "C-34",
     logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./C34-1.jpg" },
-      { name: "Chairperson 2", image: "./C34-2.jpg" },
-      { name: "Chairperson 3", image: "./C34-3.jpg" },
-      { name: "Chairperson 4", image: "./C34-4.jpg" },
+      { name: "Sivakaarthikeyan", position: "Co-Chairperson", image: "./SK.jpg" },
+      { name: "Swayam Krishnan", position: "Co-Chairperson", image: "./Swayam.jpg" },
+      { name: "Sundar Ganesh", position: "Co-Chairperson", image: "./Sundar Ganesh.jpg" },
+      { name: "Sidhant", position: "Vice Chairperson", image: "./Sidhant.jpg" },
     ],
   },
   {
     name: "IPC (INTERNATIONAL PRESS CORPS)",
     logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./IPC-1.jpg" },
-      { name: "Chairperson 2", image: "./IPC-2.jpg" },
-      { name: "Chairperson 3", image: "./IPC-3.jpg" },
-      { name: "Chairperson 4", image: "./IPC-4.jpg" },
+      { name: "Poojitha", position: "Head of Journalism", image: "./Poojitha.jpg" },
+      { name: "Prabhu Shankar", position: "Head of Photography", image: "./Prabhu Shankar.jpg" },
+      { name: "Sankrushi", position: "Editor in Chief", image: "./Sankrushi.jpg" },
+      { name: "Santhosh Sivan", position: "Photographer in Chief", image: "./Santhosh Sivan.jpg" },
     ],
   },
   {
     name: "National Economic Council",
     logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./NEC-1.jpg" },
-      { name: "Chairperson 2", image: "./NEC-2.jpg" },
-      { name: "Chairperson 3", image: "./NEC-3.jpg" },
+      { name: "Karthik V", position: "Chair, Donald Trump", image: "./Karthik.jpg" },
+      { name: "Ruchit Shivani", position: "Director, Kevin Hassett", image: "./Ruchit.jpg" },
+      { name: "Anirudh Kumaran", position: "Deputy Director, Daniel Hornung", image: "./Anirudh.jpg" },
     ],
   },
   {
     name: "Nuclear Emergency Session",
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./NES-1.jpg" },
-      { name: "Chairperson 2", image: "./NES-2.jpg" },
-      { name: "Chairperson 3", image: "./NES-3.jpg" },
+      { name: "Lokesh Narayana", position: "Chairperson", image: "./Lokesh.jpg" },
+      { name: "Ashwamedh", position: "Vice Chairperson", image: "./Ashwamedh.jpg" },
+      { name: "Vihaan Reddy", position: "Director", image: "./Vihaan.jpg" },
     ],
   },
   {
     name: "UNGA (UNITED NATIONS GENERAL ASSEMBLY)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./UNGA-1.jpg" },
-      { name: "Chairperson 2", image: "./UNGA-2.jpg" },
-      { name: "Chairperson 3", image: "./UNGA-3.jpg" },
+      { name: "Hrishekesh", position: "Chairperson", image: "./Hirshikesh.jpg" },
+      { name: "Aashrith Narayn", position: "Vice Chairperson", image: "./Aashrith.jpg" },
+      { name: "Idhant Singh Chauhan", position: "Director", image: "./Idhant.jpg" },
     ],
   },
   {
     name: "UNTAC (United Nations Transitional Authority in Cambodia)",
     logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./UNTAC-1.jpg" },
-      { name: "Chairperson 2", image: "./UNTAC-2.jpg" },
-      { name: "Chairperson 3", image: "./UNTAC-3.jpg" },
+      { name: "Athmaaram", position: "Chairperson", image: "./Athmaaram.jpg" },
+      { name: "Sowmi Narayanan", position: "Co-Vice Chairperson", image: "./Sowmi.jpg" },
+      { name: "Sudharshan Sukumar", position: "Co-Vice Chairperson", image: "./Sudharshan Sukumar.jpg" },
     ],
   },
   {
     name: "US SENATE",
     logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Chairperson 1", image: "./USSENATE-1.jpg" },
-      { name: "Chairperson 2", image: "./USSENATE-2.jpg" },
-      { name: "Chairperson 3", image: "./USSENATE-3.jpg" },
-      { name: "Chairperson 4", image: "./USSENATE-4.jpg" },
+      { name: "Venkatesh", position: "Co-Chairperson", image: "./Venky.jpg" },
+      { name: "Vishwesh", position: "Co-Chairperson", image: "./Vishwesh.jpg" },
+      { name: "Riyann", position: "Co-Vice Chairperson", image: "./Riyaan.jpg" },
+      { name: "Saahil Ali", position: "Co-Vice Chairperson", image: "./Saahil.jpg" },
     ],
   },
 ]
@@ -256,7 +256,7 @@ function App() {
                         alt={chair.name}
                         className="w-32 h-32 object-cover rounded-full mb-4"
                         onError={(e) => {
-                          e.currentTarget.src = ""
+                          e.currentTarget.src = "/placeholder.svg?height=128&width=128"
                           e.currentTarget.className =
                             "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
                           const icon = document.createElement("div")
@@ -267,6 +267,7 @@ function App() {
                         }}
                       />
                       <span className="text-center font-medium">{chair.name}</span>
+                      <span className="text-center text-sm text-white/70">{chair.position}</span>
                     </div>
                   ))}
                 </div>
