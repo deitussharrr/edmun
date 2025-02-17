@@ -1,59 +1,85 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Instagram, MapPin, Calendar, Users, Award, Film, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
+import { Instagram, MapPin, Calendar, Users, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
 
 const committees = [
   {
-    name: 'AIPPM (ALL INDIA POLITICAL PARTIES MEET)',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "AIPPM (ALL INDIA POLITICAL PARTIES MEET)",
+    logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./AIPPM-1.jpg" },
+      { name: "Chairperson 2", image: "./AIPPM-2.jpg" },
+      { name: "Chairperson 3", image: "./AIPPM-3.jpg" },
+    ],
   },
   {
-    name: 'US SENATE (HAS 4 CHAIRPERSONS)',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "C-34",
+    logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./C34-1.jpg" },
+      { name: "Chairperson 2", image: "./C34-2.jpg" },
+      { name: "Chairperson 3", image: "./C34-3.jpg" },
+      { name: "Chairperson 4", image: "./C34-4.jpg" },
+    ],
   },
   {
-    name: 'UNGA (UNITED NATIONS GENERAL ASSEMBLY)',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "IPC (INTERNATIONAL PRESS CORPS)",
+    logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./IPC-1.jpg" },
+      { name: "Chairperson 2", image: "./IPC-2.jpg" },
+      { name: "Chairperson 3", image: "./IPC-3.jpg" },
+      { name: "Chairperson 4", image: "./IPC-4.jpg" },
+    ],
   },
   {
-    name: 'UNTAC (United Nations Transitional Authority in Cambodia)',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "National Economic Council",
+    logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./NEC-1.jpg" },
+      { name: "Chairperson 2", image: "./NEC-2.jpg" },
+      { name: "Chairperson 3", image: "./NEC-3.jpg" },
+    ],
   },
   {
-    name: 'National Economic Council',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "Nuclear Emergency Session",
+    logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./NES-1.jpg" },
+      { name: "Chairperson 2", image: "./NES-2.jpg" },
+      { name: "Chairperson 3", image: "./NES-3.jpg" },
+    ],
   },
   {
-    name: 'Nuclear Emergency Session',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "UNGA (UNITED NATIONS GENERAL ASSEMBLY)",
+    logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./UNGA-1.jpg" },
+      { name: "Chairperson 2", image: "./UNGA-2.jpg" },
+      { name: "Chairperson 3", image: "./UNGA-3.jpg" },
+    ],
   },
   {
-    name: 'C-34',
-    logo: 'https://via.placeholder.com/150',
-    chairperson: 'Chairperson Name',
-    viceChairperson: 'Vice Chairperson Name',
-    director: 'Director Name',
+    name: "UNTAC (United Nations Transitional Authority in Cambodia)",
+    logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./UNTAC-1.jpg" },
+      { name: "Chairperson 2", image: "./UNTAC-2.jpg" },
+      { name: "Chairperson 3", image: "./UNTAC-3.jpg" },
+    ],
   },
-];
+  {
+    name: "US SENATE",
+    logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
+    chairpeople: [
+      { name: "Chairperson 1", image: "./USSENATE-1.jpg" },
+      { name: "Chairperson 2", image: "./USSENATE-2.jpg" },
+      { name: "Chairperson 3", image: "./USSENATE-3.jpg" },
+      { name: "Chairperson 4", image: "./USSENATE-4.jpg" },
+    ],
+  },
+]
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -106,6 +132,9 @@ function App() {
             <a href="#venue" className="text-white hover:text-white/80 transition-colors block py-2">
               Venue
             </a>
+            <a href="#committees" className="text-white hover:text-white/80 transition-colors block py-2">
+              Committees
+            </a>
             <a
               href="#register"
               className="futuristic-button bg-white/10 text-white px-6 py-2 rounded-full hover:bg-white/20 block text-center mt-4"
@@ -119,11 +148,7 @@ function App() {
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="./bg.jpg"
-            className="w-full h-full object-cover"
-            alt="EDMUN Conference"
-          />
+          <img src="./bg.jpg" className="w-full h-full object-cover" alt="EDMUN Conference" />
           <div
             className="absolute inset-0"
             style={{
@@ -154,15 +179,18 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">
-            About Us
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">About Us</h2>
           <div className="glass-card p-8 rounded-2xl text-white hover-card">
             <p className="text-lg leading-relaxed">
-              Being inherently social, and most conducive to an offline experience, the Chennai Circuit saw a severe lapse in quality of this riveting event post the COVID-19 Pandemic. Thus, Edifice Enterprises was made by Arjun Krishna. An organization that brought together a group of students with over 800 MUNs of combined experience between them, it has been committed to promoting the culture of MUNs and introducing a better standard and quality to school and college students alike.
+              Being inherently social, and most conducive to an offline experience, the Chennai Circuit saw a severe
+              lapse in quality of this riveting event post the COVID-19 Pandemic. Thus, Edifice Enterprises was made by
+              Arjun Krishna. An organization that brought together a group of students with over 800 MUNs of combined
+              experience between them, it has been committed to promoting the culture of MUNs and introducing a better
+              standard and quality to school and college students alike.
             </p>
             <p className="text-lg leading-relaxed">
-              EDMUN was launched last year and had its first edition on the 26th and 27th of April 2024, at the Leo School of Excellence in Anna Nagar.
+              EDMUN was launched last year and had its first edition on the 26th and 27th of April 2024, at the Leo
+              School of Excellence in Anna Nagar.
             </p>
           </div>
         </div>
@@ -177,10 +205,13 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="glass-card p-8 rounded-2xl text-white hover-card">
               <p className="text-lg leading-relaxed mb-6">
-                EDMUN was launched last year and had its first edition on the 26th and 27th of April 2024, at the Leo School of Excellence in Anna Nagar. The conference saw over 500 students from schools and colleges, attending the event, making it the largest private-label MUN in Chennai.
+                EDMUN was launched last year and had its first edition on the 26th and 27th of April 2024, at the Leo
+                School of Excellence in Anna Nagar. The conference saw over 500 students from schools and colleges,
+                attending the event, making it the largest private-label MUN in Chennai.
               </p>
               <p className="text-lg leading-relaxed mb-8">
-                The event was graced by Shri C.N. Maheshvaran (I.A.S.) Secretary of Commerce and Finance for the state of Tamil Nadu.
+                The event was graced by Shri C.N. Maheshvaran (I.A.S.) Secretary of Commerce and Finance for the state
+                of Tamil Nadu.
               </p>
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center glass-card px-4 py-2 rounded-full">
@@ -194,14 +225,16 @@ function App() {
               </div>
             </div>
             <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
-                <div style={{padding:"56.25% 0 0 0",position:"relative"}}>
-                    <iframe src="https://player.vimeo.com/video/1057277850?h=71bf3941bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                    frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
-                    style={{position:"absolute",top:0,left:0,width:"100%",height:"100%"}} 
-                    title="aftermovie">
-                    </iframe>
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
+              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1057277850?h=71bf3941bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                  title="aftermovie"
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
           </div>
         </div>
@@ -211,24 +244,31 @@ function App() {
       <section id="committees" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid gap-8">
             {committees.map((committee, index) => (
               <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
-                <img src={committee.logo} alt={committee.name} className="w-24 h-24 mx-auto mb-6" />
-                <h3 className="text-2xl font-semibold mb-4 text-center">{committee.name}</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Users className="w-6 h-6 mr-3" />
-                    <span>Chairperson: {committee.chairperson}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Award className="w-6 h-6 mr-3" />
-                    <span>Vice Chairperson: {committee.viceChairperson}</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Globe className="w-6 h-6 mr-3" />
-                    <span>Director: {committee.director}</span>
-                  </div>
+                <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  {committee.chairpeople.map((chair, idx) => (
+                    <div key={idx} className="flex flex-col items-center">
+                      <img
+                        src={chair.image || "/placeholder.svg"}
+                        alt={chair.name}
+                        className="w-32 h-32 object-cover rounded-full mb-4"
+                        onError={(e) => {
+                          e.currentTarget.src = ""
+                          e.currentTarget.className =
+                            "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
+                          const icon = document.createElement("div")
+                          icon.className = "w-12 h-12 text-white/50"
+                          icon.innerHTML =
+                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
+                          e.currentTarget.appendChild(icon)
+                        }}
+                      />
+                      <span className="text-center font-medium">{chair.name}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
@@ -291,3 +331,4 @@ function App() {
 }
 
 export default App
+
