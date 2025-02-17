@@ -1,15 +1,16 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Instagram, MapPin, Calendar, Users, Globe, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
+import { Instagram, MapPin, Calendar, Users, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
+import Image from 'next/image';
 
 const committees = [
   {
-    name: "AIPPM (ALL INDIA POLITICAL PARTIES MEET)",
+    name: "AIPPM (All India Political Parties Meet)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
     chairpeople: [
       { name: "Ravivatsan", position: "Chairperson", image: "./Ravi Vatsan.jpg" },
-      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "./Sanjal Senthilnaathan.jpg" },
+      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "./Sanjai Senthilnaathan.jpg" },
       { name: "Ritesh", position: "Director", image: "./Ritesh.jpg" },
     ],
   },
@@ -52,7 +53,7 @@ const committees = [
     ],
   },
   {
-    name: "UNGA (UNITED NATIONS GENERAL ASSEMBLY)",
+    name: "UNGA (Unites Nations General Assembly)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
     chairpeople: [
       { name: "Hrishekesh", position: "Chairperson", image: "./Hirshikesh.jpg" },
@@ -112,7 +113,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <Globe className="w-8 h-8 text-white" />
+           <Image src="./edmunlogo.png" width={32} height={32} alt="EDMUN Logo" className="w-8 h-8 text-white" />
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
           </div>
           <div>
@@ -144,7 +145,6 @@ function App() {
           </div>
         )}
       </nav>
-
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
@@ -158,7 +158,7 @@ function App() {
         </div>
         <div className="absolute inset-0 bg-grid"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-          <Globe className="w-24 h-24 mb-8 animate-float text-white opacity-80" />
+           <Image src="./edmunlogo.png" width={96} height={96} alt="EDMUN Logo" className="w-24 h-24 mb-8 animate-float text-white opacity-80" />
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
           <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
             Chennai's Largest Private label MUN
@@ -255,6 +255,7 @@ function App() {
                         src={chair.image || "/placeholder.svg"}
                         alt={chair.name}
                         className="w-32 h-32 object-cover rounded-full mb-4"
+                        style={{ margin: "0 auto" }}
                         onError={(e) => {
                           e.currentTarget.src = "/placeholder.svg?height=128&width=128"
                           e.currentTarget.className =
@@ -276,7 +277,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -316,15 +316,16 @@ function App() {
             </div>
             <div className="flex items-center space-x-6">
               <a
-                href="https://instagram.com/edmun"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-opacity-80 transition-all hover:scale-110"
+                href="#"
+                className="text-white hover:text-white/80 transition-colors"
               >
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
           </div>
+          <p className="text-center text-white/40 mt-8">
+            &copy; 2025 EDMUN 2.0. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
@@ -332,4 +333,3 @@ function App() {
 }
 
 export default App
-
