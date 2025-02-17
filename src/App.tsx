@@ -255,7 +255,6 @@ function App() {
                         src={chair.image || "/placeholder.svg"}
                         alt={chair.name}
                         className="w-32 h-32 object-cover rounded-full mb-4"
-                        style={{ margin: "0 auto" }}
                         onError={(e) => {
                           e.currentTarget.src = "/placeholder.svg?height=128&width=128"
                           e.currentTarget.className =
