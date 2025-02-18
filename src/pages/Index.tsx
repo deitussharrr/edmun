@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
 
@@ -118,7 +117,6 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-grid" style={{ backgroundColor: "#002211" }}>
-      {/* Navigation */}
       <nav
         className={`fixed w-full z-50 transition-all duration-300 ${
           scrolled ? "bg-[#002211]/90 backdrop-blur-md py-4" : "py-6"
@@ -163,7 +161,6 @@ const App = () => {
         )}
       </nav>
 
-      {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -202,7 +199,6 @@ const App = () => {
         </div>
       </header>
 
-      {/* About Section */}
       <section id="about" className="py-20 px-4 relative bg-grid">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">About Us</h2>
@@ -222,7 +218,6 @@ const App = () => {
         </div>
       </section>
 
-      {/* EDMUN 1.0 Section */}
       <section className="py-20 px-4 relative bg-grid">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">
@@ -263,21 +258,19 @@ const App = () => {
         </div>
       </section>
 
-      {/* Committees Section */}
       <section id="committees" className="py-20 px-4 relative bg-grid">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
           <div className="grid gap-8">
             {committees.map((committee, index) => (
               <div key={index} className="committee-card p-8 rounded-2xl text-white">
-                <h3 className="text-3xl font-semibold mb-4 text-center">{committee.name}</h3>
-                <p className="agenda-text mb-6 text-center text-sm">
-                  {committee.agenda}
-                </p>
-                <p className="text-white/80 mb-8 text-center text-sm">
-                  {committee.description}
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <h3 className="text-3xl font-semibold mb-6 text-center">{committee.name}</h3>
+                <div className="max-w-3xl mx-auto">
+                  <p className="agenda-text text-center">
+                    {committee.agenda}
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
                   {committee.chairpeople.map((chair, idx) => (
                     <div key={idx} className="flex flex-col items-center">
                       <img
@@ -299,7 +292,6 @@ const App = () => {
         </div>
       </section>
 
-      {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative bg-grid">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Venue</h2>
@@ -318,7 +310,6 @@ const App = () => {
                 </button>
               </div>
               <div className="bg-white/5 h-64 md:h-auto">
-                {/* Replace with actual venue image */}
                 <div className="w-full h-full flex items-center justify-center">
                   <MapPin className="w-16 h-16 text-white opacity-40 animate-float" />
                 </div>
@@ -328,7 +319,6 @@ const App = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-12 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
