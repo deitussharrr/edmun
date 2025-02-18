@@ -279,7 +279,7 @@ function App() {
   <div className="absolute inset-0 bg-grid"></div>
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
     <Image
-      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
+      src="https://i.postimg.cc/Z5qDcJHh/edmunlogo0.png"
       alt="EDMUNLogo"
       width={150}
       height={150}
