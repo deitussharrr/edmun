@@ -379,7 +379,6 @@ function App() {
       {committees.map((committee, index) => (
         <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
           <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
-          <p className="mb-4 text-lg text-center">{committee.agenda}</p> {/* Center the agenda text */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {committee.chairpeople.map((chair, idx) => (
               <div key={idx} className="flex flex-col items-center">
@@ -403,11 +402,15 @@ function App() {
               </div>
             ))}
           </div>
+          {committee.agenda && (
+            <p className="mb-4 text-lg text-center">{committee.agenda}</p>
+          )}
         </div>
       ))}
     </div>
   </div>
 </section>
+
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
