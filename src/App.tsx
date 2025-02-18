@@ -9,75 +9,75 @@ const committees = [
     name: "AIPPM (All India Political Parties Meet)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Ravivatsan", position: "Chairperson", image: "./Ravi Vatsan.jpg" },
-      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "./Sanjai Senthilnaathan.jpg" },
-      { name: "Ritesh", position: "Director", image: "./Ritesh.jpg" },
+      { name: "Ravivatsan", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ravi%20Vatsan-FeqXKJzRw7vaOTvg17RRDoMesm6N9I.jpg" },
+      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sanjai%20Senthilnaathan-Gf8TFO4prMnwQ69o9doeSTANJsPEa4.jpg" },
+      { name: "Ritesh", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ritesh-Y6AqrBYZqhVArFHKQPq4Q64mL8fs5j.jpg" },
     ],
   },
   {
     name: "C-34",
     logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Sivakaarthikeyan", position: "Co-Chairperson", image: "./SK.jpg" },
-      { name: "Swayam Krishnan", position: "Co-Chairperson", image: "./Swayam.jpg" },
-      { name: "Sundar Ganesh", position: "Co-Chairperson", image: "./Sundar Ganesh.jpg" },
-      { name: "Sidhant", position: "Vice Chairperson", image: "./Sidhant.jpg" },
+      { name: "Sivakaarthikeyan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/SK-eYvUbVfQtW57353GKD7CFGAQdOGEF1.jpg" },
+      { name: "Swayam Krishnan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Swayam-YADLSacFAMztS7dAXVdRKhLDG5LWvA.jpg" },
+      { name: "Sundar Ganesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sundar%20Ganesh-lGzpwPx3PEPgxuPwloSp6rzOdFxWte.jpg" },
+      { name: "Sidhant", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sidhant-9FPeomrLnPGoxCbXrkcJGDwGzcSRuz.jpg" },
     ],
   },
   {
     name: "IPC (INTERNATIONAL PRESS CORPS)",
     logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Poojitha", position: "Head of Journalism", image: "./Poojitha.jpg" },
-      { name: "Prabhu Shankar", position: "Head of Photography", image: "./Prabhu Shankar.jpg" },
-      { name: "Sankrushi", position: "Editor in Chief", image: "./Sankrushi.jpg" },
-      { name: "Santhosh Sivan", position: "Photographer in Chief", image: "./Santhosh Sivan.jpg" },
+      { name: "Poojitha", position: "Head of Journalism", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Poojitha-BGPM6ZCytfYi7eZwQDAVKYUi56oMjj.jpg" },
+      { name: "Prabhu Shankar", position: "Head of Photography", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Prabhu%20Shankar-5fT49b91JA9ZyCI9fJllGsWtu0Femm.jpg" },
+      { name: "Sankrushi", position: "Editor in Chief", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sankrushi-XfXRxTQnaveryX82WU9U7IczG7dycE.jpg" },
+      { name: "Santhosh Sivan", position: "Photographer in Chief", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Santhosh%20Sivan-EAua1N4l5qyxKPJ9MuFz8cInVWCPrY.jpg" },
     ],
   },
   {
     name: "National Economic Council",
     logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Karthik V", position: "Chair, Donald Trump", image: "./Karthik.jpg" },
-      { name: "Ruchit Shivani", position: "Director, Kevin Hassett", image: "./Ruchit.jpg" },
-      { name: "Anirudh Kumaran", position: "Deputy Director, Daniel Hornung", image: "./Anirudh.jpg" },
+      { name: "Karthik V", position: "Chair, Donald Trump", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Karthik-rfLPxFHleYlzk5xhmc4f45UY7uled6.jpg" },
+      { name: "Ruchit Shivani", position: "Director, Kevin Hassett", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ruchit-RJ4BVzm0lLCknbLFSBSy6MoLd2rSeR.jpg" },
+      { name: "Anirudh Kumaran", position: "Deputy Director, Daniel Hornung", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Anirudh-FKRtyS00QwaaUPDldLHgHwfZtbDHv3.jpg" },
     ],
   },
   {
     name: "Nuclear Emergency Session",
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Lokesh Narayana", position: "Chairperson", image: "./Lokesh.jpg" },
-      { name: "Ashwamedh", position: "Vice Chairperson", image: "./Ashwamedh.jpg" },
-      { name: "Vihaan Reddy", position: "Director", image: "./Vihaan.jpg" },
+      { name: "Lokesh Narayana", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Lokesh-aUWJLAs1eAIXR3X9GuOyxLT5GHeWXt.jpg" },
+      { name: "Ashwamedh", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ashwamedh-tgXc0YcK625xekWhy8WoXGhpgJPJN9.jpg" },
+      { name: "Vihaan Reddy", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vihaan-yPm7dUVnfd6fTBBn1rxd6XoZXXzAm7.jpg" },
     ],
   },
   {
     name: "UNGA (Unites Nations General Assembly)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Hrishekesh", position: "Chairperson", image: "./Hirshikesh.jpg" },
-      { name: "Aashrith Narayn", position: "Vice Chairperson", image: "./Aashrith.jpg" },
-      { name: "Idhant Singh Chauhan", position: "Director", image: "./Idhant.jpg" },
+      { name: "Hrishekesh", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Hirshikesh-4IMfSLbofuNMdWBlAmpJibqkUktBzX.jpg" },
+      { name: "Aashrith Narayn", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Aashrith-rcJDaPJhaQb3H3yaH840PNJRLCJiVV.jpg" },
+      { name: "Idhant Singh Chauhan", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Idhant-mwMwvZO202LoVoM8AtXocWB6L6oAA9.jpg" },
     ],
   },
   {
     name: "UNTAC (United Nations Transitional Authority in Cambodia)",
     logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Athmaaram", position: "Chairperson", image: "./Athmaaram.jpg" },
-      { name: "Sowmi Narayanan", position: "Co-Vice Chairperson", image: "./Sowmi.jpg" },
-      { name: "Sudharshan Sukumar", position: "Co-Vice Chairperson", image: "./Sudharshan Sukumar.jpg" },
+      { name: "Athmaaram", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Athmaaram-rj5hRX1qRPoG2aOzsjMEZ9008nG2WW.jpg" },
+      { name: "Sowmi Narayanan", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sowmi-WTUr9OF1hBhz7BZnYiSsJgA1G8stnQ.jpg" },
+      { name: "Sudharshan Sukumar", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sudharshan%20Sukumar-kMOSLEkCuH7m9ruA1Acsyj2TNRjMQc.jpg" },
     ],
   },
   {
     name: "US SENATE",
     logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
     chairpeople: [
-      { name: "Venkatesh", position: "Co-Chairperson", image: "./Venky.jpg" },
-      { name: "Vishwesh", position: "Co-Chairperson", image: "./Vishwesh.jpg" },
-      { name: "Riyann", position: "Co-Vice Chairperson", image: "./Riyaan.jpg" },
-      { name: "Saahil Ali", position: "Co-Vice Chairperson", image: "./Saahil.jpg" },
+      { name: "Venkatesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Venky-fA6tcnzcFZiDNKTcoHbSi8zeJXF0YD.jpg" },
+      { name: "Vishwesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vishwesh-PVcs8bTAp420BS9maK9Q9A8Cm9Irnu.jpg" },
+      { name: "Riyann", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Riyaan-zt6d3g3aV9qVgrpfq59ZLQ4wOLlccI.jpg" },
+      { name: "Saahil Ali", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Saahil-xavYjk7fIVnb3dpNNCRscb2sI25HpZ.jpg" },
     ],
   },
 ]
@@ -113,6 +113,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
+            <Image src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png" width={32} height={32} alt="EDMUN Logo" className="w-8 h-8 text-white" />
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
           </div>
           <div>
@@ -147,7 +148,7 @@ function App() {
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <img src="./bg.jpg" className="w-full h-full object-cover" alt="EDMUN Conference" />
+          <img src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg" className="w-full h-full object-cover" alt="EDMUN Conference" />
           <div
             className="absolute inset-0"
             style={{
@@ -157,6 +158,7 @@ function App() {
         </div>
         <div className="absolute inset-0 bg-grid"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+          <Image src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png" width={96} height={96} alt="EDMUN Logo" className="w-24 h-24 mb-8 animate-float text-white opacity-80" />
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
           <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
             Chennai's Largest Private label MUN
@@ -223,16 +225,13 @@ function App() {
               </div>
             </div>
             <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
-              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1057277850?h=71bf3941bc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-                  title="aftermovie"
-                ></iframe>
-              </div>
-              <script src="https://player.vimeo.com/api/player.js"></script>
+              <video
+                className="w-full h-full object-cover"
+                controls
+                src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/aftermovie-zQceoljO0ANvt17OtBDQS2lIrkSYue.mp4"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -253,7 +252,6 @@ function App() {
                         src={chair.image || "/placeholder.svg"}
                         alt={chair.name}
                         className="w-32 h-32 object-cover rounded-full mb-4"
-                        style={{ margin: "0 auto" }}
                         onError={(e) => {
                           e.currentTarget.src = "/placeholder.svg?height=128&width=128"
                           e.currentTarget.className =
@@ -275,6 +273,7 @@ function App() {
           </div>
         </div>
       </section>
+
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -313,17 +312,12 @@ function App() {
               <p className="text-white/60">A Humble aid to Save the Circuit</p>
             </div>
             <div className="flex items-center space-x-6">
-              <a
-                href="#"
-                className="text-white hover:text-white/80 transition-colors"
-              >
+              <a href="#" className="text-white hover:text-white/80 transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>
           </div>
-          <p className="text-center text-white/40 mt-8">
-            &copy; 2025 EDMUN 2.0. All rights reserved.
-          </p>
+          <p className="text-center text-white/40 mt-8">&copy; 2025 EDMUN 2.0. All rights reserved.</p>
         </div>
       </footer>
     </div>
