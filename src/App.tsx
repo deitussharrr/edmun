@@ -231,7 +231,7 @@ function App() {
               src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png"
               width={64}
               height={64}
-              alt="EDMUN Logo"
+              alt="EDMUN 0Logo"
               className="w-8 h-8 text-white"
             />
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
