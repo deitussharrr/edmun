@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
-import Image from 'next/image';
 
 const committees = [
   {
@@ -91,7 +90,6 @@ function App() {
 
     window.addEventListener("scroll", handleScroll)
 
-    // Cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
@@ -111,7 +109,7 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-           <Image src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png" width={32} height={32} alt="EDMUN Logo" className="w-8 h-8 text-white" />
+            <img src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png" alt="EDMUN Logo" className="w-8 h-8 text-white" />
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
           </div>
           <div>
@@ -143,13 +141,14 @@ function App() {
           </div>
         )}
       </nav>
+
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg" 
-            className="w-full h-full object-cover" 
-            alt="EDMUN Conference" 
+          <img
+            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
+            className="w-full h-full object-cover"
+            alt="EDMUN Conference"
           />
           <div
             className="absolute inset-0"
@@ -160,7 +159,7 @@ function App() {
         </div>
         <div className="absolute inset-0 bg-grid"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-           <Image src="./edmunlogo.png" width={96} height={96} alt="EDMUN Logo" className="w-24 h-24 mb-8 animate-float text-white opacity-80" />
+          <img src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png" alt="EDMUN Logo" className="w-24 h-24 mb-8 animate-float text-white opacity-80" />
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
           <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
             Chennai's Largest Private label MUN
@@ -197,7 +196,6 @@ function App() {
           </div>
         </div>
       </section>
-
       {/* EDMUN 1.0 Section */}
       <section className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -227,7 +225,7 @@ function App() {
               </div>
             </div>
             <div className="glass-card aspect-video rounded-2xl overflow-hidden hover-card">
-              <video 
+              <video
                 className="w-full h-full object-cover"
                 controls
                 src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/aftermovie-zQceoljO0ANvt17OtBDQS2lIrkSYue.mp4"
@@ -257,12 +255,12 @@ function App() {
                         onError={(e) => {
                           e.currentTarget.src = "/placeholder.svg?height=128&width=128"
                           e.currentTarget.className =
-                            "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
+                            "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center";
                           const icon = document.createElement("div")
                           icon.className = "w-12 h-12 text-white/50"
                           icon.innerHTML =
-                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
-                          e.currentTarget.appendChild(icon)
+                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
+                          e.currentTarget.appendChild(icon);
                         }}
                       />
                       <span className="text-center font-medium">{chair.name}</span>
@@ -275,54 +273,60 @@ function App() {
           </div>
         </div>
       </section>
+
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Venue</h2>
-          <div className="glass-card rounded-2xl overflow-hidden hover-card">
-            <div className="grid md:grid-cols-2">
-              <div className="p-8 text-white">
-                <div className="flex items-center mb-6">
-                  <MapPin className="w-8 h-8 mr-3" />
-                  <h3 className="text-2xl font-semibold">Conference Location</h3>
-                </div>
-                <p className="mb-4 text-lg leading-relaxed">Don Bosco Arts and Science College</p>
-                <p className="mb-8 text-lg leading-relaxed">April 19 and 20, 2025</p>
-                <button className="futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full hover:px-10 transition-all flex items-center group">
-                  Get Directions
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-              <div className="bg-white/5 h-64 md:h-auto">
-                {/* Replace with actual venue image */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <MapPin className="w-16 h-16 text-white opacity-40 animate-float" />
-                </div>
-              </div>
+          <div className="glass-card p-8 rounded-2xl text-white hover-card">
+            {/* Venue Information */}
+            <p className="text-lg leading-relaxed mb-6">
+              {" "}
+              EDMUN 2.0 will be held at the prestigious Chennai Convention Centre.
+            </p>
+            <div className="flex items-center glass-card px-4 py-2 rounded-full  mx-auto w-fit">
+              <MapPin className="w-5 h-5 text-white mr-2" />
+              <span>Chennai Convention Centre</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-8 md:mb-0">
-              <h2 className="text-3xl font-bold mb-2 text-white">EDMUN 2.0</h2>
-              <p className="text-white/60">A Humble aid to Save the Circuit</p>
-            </div>
-            <div className="flex items-center space-x-6">
-              <a
-                href="#"
-                className="text-white hover:text-white/80 transition-colors"
-              >
-                <Instagram className="w-6 h-6" />
-              </a>
-            </div>
+      {/* Register Section */}
+      <section id="register" className="py-20 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Register</h2>
+          <div className="glass-card p-8 rounded-2xl text-white hover-card">
+            <p className="text-lg leading-relaxed mb-6">
+              Secure your spot at EDMUN 2.0! Registration is now open.
+            </p>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full font-semibold transition-all hover:px-10 hover:shadow-lg hover:shadow-white/20 flex items-center mx-auto w-fit"
+            >
+              Register Now
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
-          <p className="text-center text-white/40 mt-8">
-            &copy; 2025 EDMUN 2.0. All rights reserved.
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-4 relative">
+        <div className="max-w-6xl mx-auto text-center text-white">
+          <p className="mb-4">Follow us on social media</p>
+          <div className="flex justify-center space-x-6 mb-6">
+            <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors">
+              <Instagram className="w-6 h-6" />
+            </a>
+          </div>
+          <p className="text-sm opacity-70">
+            © 2025 EDMUN 2.0. All rights reserved. | Made with ❤️ by{" "}
+            <a href="https://edifice.com" className="underline">
+              Edifice Enterprises
+            </a>
           </p>
         </div>
       </footer>
