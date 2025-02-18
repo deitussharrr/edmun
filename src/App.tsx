@@ -8,6 +8,7 @@ const committees = [
   {
     name: "AIPPM (All India Political Parties Meet)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
+    agenda: "Reviewing The Water (Prevention and Control of Pollution) Amendment Act 2024 in light of recent developments",
     chairpeople: [
       { name: "Ravivatsan", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ravi%20Vatsan-FeqXKJzRw7vaOTvg17RRDoMesm6N9I.jpg" },
       { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sanjai%20Senthilnaathan-Gf8TFO4prMnwQ69o9doeSTANJsPEa4.jpg" },
@@ -17,6 +18,7 @@ const committees = [
   {
     name: "C-34",
     logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
+    agenda: "The future of United Nations peace operations with emphasis on its functions and chain of command",
     chairpeople: [
       { name: "Sivakaarthikeyan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/SK-eYvUbVfQtW57353GKD7CFGAQdOGEF1.jpg" },
       { name: "Swayam Krishnan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Swayam-YADLSacFAMztS7dAXVdRKhLDG5LWvA.jpg" },
@@ -27,6 +29,7 @@ const committees = [
   {
     name: "IPC (INTERNATIONAL PRESS CORPS)",
     logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
+    agenda: "Classified",
     chairpeople: [
       { name: "Poojitha", position: "Head of Journalism", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Poojitha-BGPM6ZCytfYi7eZwQDAVKYUi56oMjj.jpg" },
       { name: "Prabhu Shankar", position: "Head of Photography", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Prabhu%20Shankar-5fT49b91JA9ZyCI9fJllGsWtu0Femm.jpg" },
@@ -37,6 +40,7 @@ const committees = [
   {
     name: "National Economic Council",
     logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
+    agenda: "Promoting sustainable economic growth with special emphasis on the implementation of monetary and fiscal policies",
     chairpeople: [
       { name: "Karthik V", position: "Chair, Donald Trump", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Karthik-rfLPxFHleYlzk5xhmc4f45UY7uled6.jpg" },
       { name: "Ruchit Shivani", position: "Director, Kevin Hassett", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ruchit-RJ4BVzm0lLCknbLFSBSy6MoLd2rSeR.jpg" },
@@ -46,6 +50,7 @@ const committees = [
   {
     name: "Nuclear Emergency Session",
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
+    agenda: "Hell breaks loose.",
     chairpeople: [
       { name: "Lokesh Narayana", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Lokesh-aUWJLAs1eAIXR3X9GuOyxLT5GHeWXt.jpg" },
       { name: "Ashwamedh", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ashwamedh-tgXc0YcK625xekWhy8WoXGhpgJPJN9.jpg" },
@@ -55,6 +60,7 @@ const committees = [
   {
     name: "UNGA (Unites Nations General Assembly)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
+    agenda: "Discussion on the draft international convention against the recruitment, use, financing, and training of mercenaries",
     chairpeople: [
       { name: "Hrishekesh", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Hirshikesh-4IMfSLbofuNMdWBlAmpJibqkUktBzX.jpg" },
       { name: "Aashrith Narayn", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Aashrith-rcJDaPJhaQb3H3yaH840PNJRLCJiVV.jpg" },
@@ -64,6 +70,7 @@ const committees = [
   {
     name: "UNTAC (United Nations Transitional Authority in Cambodia)",
     logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
+    agenda: "Addressing the challenges in disarmament, refugee repatriation, and political stabilization amid factional resistance in Cambodia",
     chairpeople: [
       { name: "Athmaaram", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Athmaaram-rj5hRX1qRPoG2aOzsjMEZ9008nG2WW.jpg" },
       { name: "Sowmi Narayanan", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sowmi-WTUr9OF1hBhz7BZnYiSsJgA1G8stnQ.jpg" },
@@ -73,6 +80,7 @@ const committees = [
   {
     name: "US SENATE",
     logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
+    agenda: "Discussing the need for an interventionist stance in global affairs",
     chairpeople: [
       { name: "Venkatesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Venky-fA6tcnzcFZiDNKTcoHbSi8zeJXF0YD.jpg" },
       { name: "Vishwesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vishwesh-PVcs8bTAp420BS9maK9Q9A8Cm9Irnu.jpg" },
@@ -268,6 +276,9 @@ function App() {
                     </div>
                   ))}
                 </div>
+                {committee.agenda && (
+                  <p className="mb-4 text-lg text-center">{committee.agenda}</p>
+                )}
               </div>
             ))}
           </div>
