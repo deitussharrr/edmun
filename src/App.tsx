@@ -228,10 +228,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Image
-              src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png"
+              src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
               width={64}
               height={64}
-              alt="EDMUN 0Logo"
+              alt="EDMUN Logo"
               className="w-8 h-8 text-white"
             />
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
@@ -283,7 +283,7 @@ function App() {
         <div className="absolute inset-0 bg-grid"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
           <Image
-            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo-SAyFioMtaTLYO8Y8YVVflGi5GLEQdv.png"
+            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
             width={413}
             height={376}
             alt="EDMUN Logo"
@@ -454,4 +454,3 @@ function App() {
 }
 
 export default App
-
