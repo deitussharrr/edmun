@@ -279,10 +279,8 @@ function App() {
   <div className="absolute inset-0 bg-grid"></div>
   <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
     <Image
-      src="https://i.postimg.cc/Z5qDcJHh/edmunlogo0.png"
+      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
       alt="EDMUNLogo"
-      width={150}
-      height={150}
       className="w-32 h-32 text-white"
     />
     <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
