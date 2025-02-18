@@ -229,8 +229,6 @@ function App() {
           <div className="flex items-center space-x-2">
             <Image
               src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
-              width={64}
-              height={64}
               alt="EDMUN Logo"
               className="w-8 h-8 text-white"
             />
@@ -272,6 +270,8 @@ function App() {
             src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
             className="w-full h-full object-cover"
             alt="EDMUN Conference"
+            width={64}
+            height={64}
           />
           <div
             className="absolute inset-0"
@@ -284,8 +284,6 @@ function App() {
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
           <Image
             src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
-            width={413}
-            height={376}
             alt="EDMUN Logo"
             className="w-24 h-[26.4px] mb-8 animate-float text-white opacity-80"
           />
