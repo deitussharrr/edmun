@@ -8,6 +8,8 @@ const committees = [
   {
     name: "AIPPM (All India Political Parties Meet)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
+    agenda:
+      "Reviewing The Water (Prevention and Control of Pollution) Amendment Act 2024 in light of recent developments",
     chairpeople: [
       {
         name: "Ravivatsan",
@@ -31,6 +33,7 @@ const committees = [
   {
     name: "C-34",
     logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
+    agenda: "The future of United Nations peace operations with emphasis on its functions and chain of command",
     chairpeople: [
       {
         name: "Sivakaarthikeyan",
@@ -58,6 +61,7 @@ const committees = [
   {
     name: "IPC (INTERNATIONAL PRESS CORPS)",
     logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
+    agenda: "Classified",
     chairpeople: [
       {
         name: "Poojitha",
@@ -86,6 +90,8 @@ const committees = [
   {
     name: "National Economic Council",
     logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
+    agenda:
+      "Promoting sustainable economic growth with special emphasis on the implementation of monetary and fiscal policies",
     chairpeople: [
       {
         name: "Karthik V",
@@ -107,6 +113,7 @@ const committees = [
   {
     name: "Nuclear Emergency Session",
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
+    agenda: "Hell breaks loose.",
     chairpeople: [
       {
         name: "Lokesh Narayana",
@@ -128,6 +135,8 @@ const committees = [
   {
     name: "UNGA (Unites Nations General Assembly)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
+    agenda:
+      "Discussion on the draft international convention against the recruitment, use, financing, and training of mercenaries",
     chairpeople: [
       {
         name: "Hrishekesh",
@@ -149,6 +158,8 @@ const committees = [
   {
     name: "UNTAC (United Nations Transitional Authority in Cambodia)",
     logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
+    agenda:
+      "Addressing the challenges in disarmament, refugee repatriation, and political stabilization amid factional resistance in Cambodia",
     chairpeople: [
       {
         name: "Athmaaram",
@@ -171,6 +182,7 @@ const committees = [
   {
     name: "US SENATE",
     logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
+    agenda: "Discussing the need for an interventionist stance in global affairs",
     chairpeople: [
       {
         name: "Venkatesh",
@@ -227,7 +239,6 @@ function App() {
       >
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-
             <span className="text-white font-bold text-xl">EDMUN 2.0</span>
           </div>
           <div>
@@ -261,44 +272,44 @@ function App() {
       </nav>
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
-  <div className="absolute inset-0">
-    <img
-      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
-      className="w-full h-full object-cover"
-      alt="EDMUN Conference"
-      width={64}
-      height={64}
-    />
-    <div
-      className="absolute inset-0"
-      style={{
-        background: "linear-gradient(to bottom, rgba(0,34,17,0.7), rgba(0,34,17,0.9))",
-      }}
-    ></div>
-  </div>
-  <div className="absolute inset-0 bg-grid"></div>
-  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-    <Image
-      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
-      alt="EDMUNLogo"
-      className="w-32 h-32 text-white"
-    />
-    <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
-    <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
-      Chennai's Largest Private label MUN
-      <br />
-      <span className="text-sm opacity-80">A Humble aid to Save the Circuit</span>
-    </p>
-    <a
-      href="#register"
-      className="group futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full font-semibold transition-all hover:px-10 hover:shadow-lg hover:shadow-white/20 flex items-center"
-    >
-      Register Now
-      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-    </a>
-    <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
-  </div>
-</header>
+        <div className="absolute inset-0">
+          <img
+            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
+            className="w-full h-full object-cover"
+            alt="EDMUN Conference"
+            width={64}
+            height={64}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(to bottom, rgba(0,34,17,0.7), rgba(0,34,17,0.9))",
+            }}
+          ></div>
+        </div>
+        <div className="absolute inset-0 bg-grid"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+          <Image
+            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
+            alt="EDMUNLogo"
+            className="w-32 h-32 text-white"
+          />
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
+          <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
+            Chennai's Largest Private label MUN
+            <br />
+            <span className="text-sm opacity-80">A Humble aid to Save the Circuit</span>
+          </p>
+          <a
+            href="#register"
+            className="group futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full font-semibold transition-all hover:px-10 hover:shadow-lg hover:shadow-white/20 flex items-center"
+          >
+            Register Now
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
+        </div>
+      </header>
       {/* About Section */}
       <section id="about" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -360,42 +371,43 @@ function App() {
         </div>
       </section>
 
-      {/* Committees Section */}
-      <section id="committees" className="py-20 px-4 relative">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
-          <div className="grid gap-8">
-            {committees.map((committee, index) => (
-              <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
-                <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                  {committee.chairpeople.map((chair, idx) => (
-                    <div key={idx} className="flex flex-col items-center">
-                      <img
-                        src={chair.image || "/placeholder.svg"}
-                        alt={chair.name}
-                        className="w-32 h-32 object-cover rounded-full mb-4"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder.svg?height=128&width=128"
-                          e.currentTarget.className =
-                            "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
-                          const icon = document.createElement("div")
-                          icon.className = "w-12 h-12 text-white/50"
-                          icon.innerHTML =
-                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
-                          e.currentTarget.appendChild(icon)
-                        }}
-                      />
-                      <span className="text-center font-medium">{chair.name}</span>
-                      <span className="text-center text-sm text-white/70">{chair.position}</span>
-                    </div>
-                  ))}
-                </div>
+{/* Committees Section */}
+<section id="committees" className="py-20 px-4 relative">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
+    <div className="grid gap-8">
+      {committees.map((committee, index) => (
+        <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
+          <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
+          <p className="mb-4 text-lg text-center">{committee.agenda}</p> {/* Center the agenda text */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {committee.chairpeople.map((chair, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <img
+                  src={chair.image || "/placeholder.svg"}
+                  alt={chair.name}
+                  className="w-32 h-32 object-cover rounded-full mb-4"
+                  onError={(e) => {
+                    e.currentTarget.src = "/placeholder.svg?height=128&width=128"
+                    e.currentTarget.className =
+                      "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
+                    const icon = document.createElement("div")
+                    icon.className = "w-12 h-12 text-white/50"
+                    icon.innerHTML =
+                      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
+                    e.currentTarget.appendChild(icon)
+                  }}
+                />
+                <span className="text-center font-medium">{chair.name}</span>
+                <span className="text-center text-sm text-white/70">{chair.position}</span>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
