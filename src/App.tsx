@@ -261,48 +261,46 @@ function App() {
       </nav>
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
-            className="w-full h-full object-cover"
-            alt="EDMUN Conference"
-            width={64}
-            height={64}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: "linear-gradient(to bottom, rgba(0,34,17,0.7), rgba(0,34,17,0.9))",
-            }}
-          ></div>
-        </div>
-        <div className="absolute inset-0 bg-grid"></div>
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-        <Image
-  src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
-  alt="EDMUN Logo"
-  width={32} // or any appropriate value
-  height={35} // or any appropriate value
-  className="w-8 h-8 text-white"
-/>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
-          <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
-            Chennai's Largest Private label MUN
-            <br />
-            <span className="text-sm opacity-80">A Humble aid to Save the Circuit</span>
-          </p>
-          <a
-            href="#register"
-            className="group futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full font-semibold transition-all hover:px-10 hover:shadow-lg hover:shadow-white/20 flex items-center"
-          >
-            Register Now
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
-        </div>
-      </header>
-
+  <div className="absolute inset-0">
+    <img
+      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
+      className="w-full h-full object-cover"
+      alt="EDMUN Conference"
+      width={64}
+      height={64}
+    />
+    <div
+      className="absolute inset-0"
+      style={{
+        background: "linear-gradient(to bottom, rgba(0,34,17,0.7), rgba(0,34,17,0.9))",
+      }}
+    ></div>
+  </div>
+  <div className="absolute inset-0 bg-grid"></div>
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
+    <Image
+      src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
+      alt="EDMUNLogo"
+      width={150}
+      height={150}
+      className="w-32 h-32 text-white"
+    />
+    <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
+    <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
+      Chennai's Largest Private label MUN
+      <br />
+      <span className="text-sm opacity-80">A Humble aid to Save the Circuit</span>
+    </p>
+    <a
+      href="#register"
+      className="group futuristic-button bg-white text-[#002211] px-8 py-3 rounded-full font-semibold transition-all hover:px-10 hover:shadow-lg hover:shadow-white/20 flex items-center"
+    >
+      Register Now
+      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+    </a>
+    <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
+  </div>
+</header>
       {/* About Section */}
       <section id="about" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
