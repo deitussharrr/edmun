@@ -2,32 +2,17 @@
 
 import { useEffect, useState } from "react"
 import { Instagram, MapPin, Calendar, Users, ArrowRight, ChevronDown, Menu, X } from "lucide-react"
-import Image from "next/image"
+import Image from 'next/image';
 
 const committees = [
   {
     name: "AIPPM (All India Political Parties Meet)",
     logo: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=300&h=300&fit=crop",
-    agenda:
-      "Reviewing The Water (Prevention and Control of Pollution) Amendment Act 2024 in light of recent developments",
+    agenda: "Reviewing The Water (Prevention and Control of Pollution) Amendment Act 2024 in light of recent developments",
     chairpeople: [
-      {
-        name: "Ravivatsan",
-        position: "Chairperson",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ravi%20Vatsan-FeqXKJzRw7vaOTvg17RRDoMesm6N9I.jpg",
-      },
-      {
-        name: "Sanjay Senthilnathan",
-        position: "Vice Chairperson",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sanjai%20Senthilnaathan-Gf8TFO4prMnwQ69o9doeSTANJsPEa4.jpg",
-      },
-      {
-        name: "Ritesh",
-        position: "Director",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ritesh-Y6AqrBYZqhVArFHKQPq4Q64mL8fs5j.jpg",
-      },
+      { name: "Ravivatsan", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ravi%20Vatsan-FeqXKJzRw7vaOTvg17RRDoMesm6N9I.jpg" },
+      { name: "Sanjay Senthilnathan", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sanjai%20Senthilnaathan-Gf8TFO4prMnwQ69o9doeSTANJsPEa4.jpg" },
+      { name: "Ritesh", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ritesh-Y6AqrBYZqhVArFHKQPq4Q64mL8fs5j.jpg" },
     ],
   },
   {
@@ -35,27 +20,10 @@ const committees = [
     logo: "https://images.unsplash.com/photo-1589262804704-c5aa9e6def89?w=300&h=300&fit=crop",
     agenda: "The future of United Nations peace operations with emphasis on its functions and chain of command",
     chairpeople: [
-      {
-        name: "Sivakaarthikeyan",
-        position: "Co-Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/SK-eYvUbVfQtW57353GKD7CFGAQdOGEF1.jpg",
-      },
-      {
-        name: "Swayam Krishnan",
-        position: "Co-Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Swayam-YADLSacFAMztS7dAXVdRKhLDG5LWvA.jpg",
-      },
-      {
-        name: "Sundar Ganesh",
-        position: "Co-Chairperson",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sundar%20Ganesh-lGzpwPx3PEPgxuPwloSp6rzOdFxWte.jpg",
-      },
-      {
-        name: "Sidhant",
-        position: "Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sidhant-9FPeomrLnPGoxCbXrkcJGDwGzcSRuz.jpg",
-      },
+      { name: "Sivakaarthikeyan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/SK-eYvUbVfQtW57353GKD7CFGAQdOGEF1.jpg" },
+      { name: "Swayam Krishnan", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Swayam-YADLSacFAMztS7dAXVdRKhLDG5LWvA.jpg" },
+      { name: "Sundar Ganesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sundar%20Ganesh-lGzpwPx3PEPgxuPwloSp6rzOdFxWte.jpg" },
+      { name: "Sidhant", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sidhant-9FPeomrLnPGoxCbXrkcJGDwGzcSRuz.jpg" },
     ],
   },
   {
@@ -63,51 +31,20 @@ const committees = [
     logo: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300&h=300&fit=crop",
     agenda: "Classified",
     chairpeople: [
-      {
-        name: "Poojitha",
-        position: "Head of Journalism",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Poojitha-BGPM6ZCytfYi7eZwQDAVKYUi56oMjj.jpg",
-      },
-      {
-        name: "Prabhu Shankar",
-        position: "Head of Photography",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Prabhu%20Shankar-5fT49b91JA9ZyCI9fJllGsWtu0Femm.jpg",
-      },
-      {
-        name: "Sankrushi",
-        position: "Editor in Chief",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sankrushi-XfXRxTQnaveryX82WU9U7IczG7dycE.jpg",
-      },
-      {
-        name: "Santhosh Sivan",
-        position: "Photographer in Chief",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Santhosh%20Sivan-EAua1N4l5qyxKPJ9MuFz8cInVWCPrY.jpg",
-      },
+      { name: "Poojitha", position: "Head of Journalism", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Poojitha-BGPM6ZCytfYi7eZwQDAVKYUi56oMjj.jpg" },
+      { name: "Prabhu Shankar", position: "Head of Photography", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Prabhu%20Shankar-5fT49b91JA9ZyCI9fJllGsWtu0Femm.jpg" },
+      { name: "Sankrushi", position: "Editor in Chief", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sankrushi-XfXRxTQnaveryX82WU9U7IczG7dycE.jpg" },
+      { name: "Santhosh Sivan", position: "Photographer in Chief", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Santhosh%20Sivan-EAua1N4l5qyxKPJ9MuFz8cInVWCPrY.jpg" },
     ],
   },
   {
     name: "National Economic Council",
     logo: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=300&h=300&fit=crop",
-    agenda:
-      "Promoting sustainable economic growth with special emphasis on the implementation of monetary and fiscal policies",
+    agenda: "Promoting sustainable economic growth with special emphasis on the implementation of monetary and fiscal policies",
     chairpeople: [
-      {
-        name: "Karthik V",
-        position: "Chair, Donald Trump",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Karthik-rfLPxFHleYlzk5xhmc4f45UY7uled6.jpg",
-      },
-      {
-        name: "Ruchit Shivani",
-        position: "Director, Kevin Hassett",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ruchit-RJ4BVzm0lLCknbLFSBSy6MoLd2rSeR.jpg",
-      },
-      {
-        name: "Anirudh Kumaran",
-        position: "Deputy Director, Daniel Hornung",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Anirudh-FKRtyS00QwaaUPDldLHgHwfZtbDHv3.jpg",
-      },
+      { name: "Karthik V", position: "Chair, Donald Trump", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Karthik-rfLPxFHleYlzk5xhmc4f45UY7uled6.jpg" },
+      { name: "Ruchit Shivani", position: "Director, Kevin Hassett", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ruchit-RJ4BVzm0lLCknbLFSBSy6MoLd2rSeR.jpg" },
+      { name: "Anirudh Kumaran", position: "Deputy Director, Daniel Hornung", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Anirudh-FKRtyS00QwaaUPDldLHgHwfZtbDHv3.jpg" },
     ],
   },
   {
@@ -115,68 +52,29 @@ const committees = [
     logo: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=300&fit=crop",
     agenda: "Hell breaks loose.",
     chairpeople: [
-      {
-        name: "Lokesh Narayana",
-        position: "Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Lokesh-aUWJLAs1eAIXR3X9GuOyxLT5GHeWXt.jpg",
-      },
-      {
-        name: "Ashwamedh",
-        position: "Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ashwamedh-tgXc0YcK625xekWhy8WoXGhpgJPJN9.jpg",
-      },
-      {
-        name: "Vihaan Reddy",
-        position: "Director",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vihaan-yPm7dUVnfd6fTBBn1rxd6XoZXXzAm7.jpg",
-      },
+      { name: "Lokesh Narayana", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Lokesh-aUWJLAs1eAIXR3X9GuOyxLT5GHeWXt.jpg" },
+      { name: "Ashwamedh", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Ashwamedh-tgXc0YcK625xekWhy8WoXGhpgJPJN9.jpg" },
+      { name: "Vihaan Reddy", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vihaan-yPm7dUVnfd6fTBBn1rxd6XoZXXzAm7.jpg" },
     ],
   },
   {
     name: "UNGA (Unites Nations General Assembly)",
     logo: "https://images.unsplash.com/photo-1603827457577-609e6f42a45e?w=300&h=300&fit=crop",
-    agenda:
-      "Discussion on the draft international convention against the recruitment, use, financing, and training of mercenaries",
+    agenda: "Discussion on the draft international convention against the recruitment, use, financing, and training of mercenaries",
     chairpeople: [
-      {
-        name: "Hrishekesh",
-        position: "Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Hirshikesh-4IMfSLbofuNMdWBlAmpJibqkUktBzX.jpg",
-      },
-      {
-        name: "Aashrith Narayn",
-        position: "Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Aashrith-rcJDaPJhaQb3H3yaH840PNJRLCJiVV.jpg",
-      },
-      {
-        name: "Idhant Singh Chauhan",
-        position: "Director",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Idhant-mwMwvZO202LoVoM8AtXocWB6L6oAA9.jpg",
-      },
+      { name: "Hrishekesh", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Hirshikesh-4IMfSLbofuNMdWBlAmpJibqkUktBzX.jpg" },
+      { name: "Aashrith Narayn", position: "Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Aashrith-rcJDaPJhaQb3H3yaH840PNJRLCJiVV.jpg" },
+      { name: "Idhant Singh Chauhan", position: "Director", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Idhant-mwMwvZO202LoVoM8AtXocWB6L6oAA9.jpg" },
     ],
   },
   {
     name: "UNTAC (United Nations Transitional Authority in Cambodia)",
     logo: "https://images.unsplash.com/photo-1528114039593-4366cc08227d?w=300&h=300&fit=crop",
-    agenda:
-      "Addressing the challenges in disarmament, refugee repatriation, and political stabilization amid factional resistance in Cambodia",
+    agenda: "Addressing the challenges in disarmament, refugee repatriation, and political stabilization amid factional resistance in Cambodia",
     chairpeople: [
-      {
-        name: "Athmaaram",
-        position: "Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Athmaaram-rj5hRX1qRPoG2aOzsjMEZ9008nG2WW.jpg",
-      },
-      {
-        name: "Sowmi Narayanan",
-        position: "Co-Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sowmi-WTUr9OF1hBhz7BZnYiSsJgA1G8stnQ.jpg",
-      },
-      {
-        name: "Sudharshan Sukumar",
-        position: "Co-Vice Chairperson",
-        image:
-          "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sudharshan%20Sukumar-kMOSLEkCuH7m9ruA1Acsyj2TNRjMQc.jpg",
-      },
+      { name: "Athmaaram", position: "Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Athmaaram-rj5hRX1qRPoG2aOzsjMEZ9008nG2WW.jpg" },
+      { name: "Sowmi Narayanan", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sowmi-WTUr9OF1hBhz7BZnYiSsJgA1G8stnQ.jpg" },
+      { name: "Sudharshan Sukumar", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Sudharshan%20Sukumar-kMOSLEkCuH7m9ruA1Acsyj2TNRjMQc.jpg" },
     ],
   },
   {
@@ -184,26 +82,10 @@ const committees = [
     logo: "https://images.unsplash.com/photo-1623345805780-8f01f714e65f?w=300&h=300&fit=crop",
     agenda: "Discussing the need for an interventionist stance in global affairs",
     chairpeople: [
-      {
-        name: "Venkatesh",
-        position: "Co-Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Venky-fA6tcnzcFZiDNKTcoHbSi8zeJXF0YD.jpg",
-      },
-      {
-        name: "Vishwesh",
-        position: "Co-Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vishwesh-PVcs8bTAp420BS9maK9Q9A8Cm9Irnu.jpg",
-      },
-      {
-        name: "Riyann",
-        position: "Co-Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Riyaan-zt6d3g3aV9qVgrpfq59ZLQ4wOLlccI.jpg",
-      },
-      {
-        name: "Saahil Ali",
-        position: "Co-Vice Chairperson",
-        image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Saahil-xavYjk7fIVnb3dpNNCRscb2sI25HpZ.jpg",
-      },
+      { name: "Venkatesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Venky-fA6tcnzcFZiDNKTcoHbSi8zeJXF0YD.jpg" },
+      { name: "Vishwesh", position: "Co-Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Vishwesh-PVcs8bTAp420BS9maK9Q9A8Cm9Irnu.jpg" },
+      { name: "Riyann", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Riyaan-zt6d3g3aV9qVgrpfq59ZLQ4wOLlccI.jpg" },
+      { name: "Saahil Ali", position: "Co-Vice Chairperson", image: "https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/Saahil-xavYjk7fIVnb3dpNNCRscb2sI25HpZ.jpg" },
     ],
   },
 ]
@@ -273,13 +155,7 @@ function App() {
       {/* Hero Section */}
       <header className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg"
-            className="w-full h-full object-cover"
-            alt="EDMUN Conference"
-            width={64}
-            height={64}
-          />
+          <img src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/bg-wI6Tzi4ACLEW2ccPe3d2e22mrQiS0e.jpg" className="w-full h-full object-cover" alt="EDMUN Conference" />
           <div
             className="absolute inset-0"
             style={{
@@ -289,11 +165,7 @@ function App() {
         </div>
         <div className="absolute inset-0 bg-grid"></div>
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-4">
-          <Image
-            src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png"
-            alt="EDMUNLogo"
-            className="w-32 h-32 text-white"
-          />
+          <Image src="https://txawaxvwy4ijlqqh.public.blob.vercel-storage.com/edmunlogo0-TxPQ639W8Am0qNrbrFMo1DIZPN84N3.png" alt="EDMUNLogo" className="w-32 h-32 text-white" />
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-glow text-center">EDMUN 2.0</h1>
           <p className="text-xl mb-12 text-center max-w-2xl animate-pulse-slow">
             Chennai's Largest Private label MUN
@@ -310,6 +182,7 @@ function App() {
           <ChevronDown className="absolute bottom-8 w-8 h-8 animate-bounce opacity-50" />
         </div>
       </header>
+
       {/* About Section */}
       <section id="about" className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto">
@@ -371,45 +244,45 @@ function App() {
         </div>
       </section>
 
-{/* Committees Section */}
-<section id="committees" className="py-20 px-4 relative">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
-    <div className="grid gap-8">
-      {committees.map((committee, index) => (
-        <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
-          <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {committee.chairpeople.map((chair, idx) => (
-              <div key={idx} className="flex flex-col items-center">
-                <img
-                  src={chair.image || "/placeholder.svg"}
-                  alt={chair.name}
-                  className="w-32 h-32 object-cover rounded-full mb-4"
-                  onError={(e) => {
-                    e.currentTarget.src = "/placeholder.svg?height=128&width=128"
-                    e.currentTarget.className =
-                      "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
-                    const icon = document.createElement("div")
-                    icon.className = "w-12 h-12 text-white/50"
-                    icon.innerHTML =
-                      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
-                    e.currentTarget.appendChild(icon)
-                  }}
-                />
-                <span className="text-center font-medium">{chair.name}</span>
-                <span className="text-center text-sm text-white/70">{chair.position}</span>
+      {/* Committees Section */}
+      <section id="committees" className="py-20 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white animate-glow">Committees</h2>
+          <div className="grid gap-8">
+            {committees.map((committee, index) => (
+              <div key={index} className="glass-card p-8 rounded-2xl text-white hover-card">
+                <h3 className="text-3xl font-semibold mb-8 text-center">{committee.name}</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  {committee.chairpeople.map((chair, idx) => (
+                    <div key={idx} className="flex flex-col items-center">
+                      <img
+                        src={chair.image || "/placeholder.svg"}
+                        alt={chair.name}
+                        className="w-32 h-32 object-cover rounded-full mb-4"
+                        onError={(e) => {
+                          e.currentTarget.src = "/placeholder.svg?height=128&width=128"
+                          e.currentTarget.className =
+                            "w-32 h-32 bg-white/10 rounded-full mb-4 flex items-center justify-center"
+                          const icon = document.createElement("div")
+                          icon.className = "w-12 h-12 text-white/50"
+                          icon.innerHTML =
+                            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>'
+                          e.currentTarget.appendChild(icon)
+                        }}
+                      />
+                      <span className="text-center font-medium">{chair.name}</span>
+                      <span className="text-center text-sm text-white/70">{chair.position}</span>
+                    </div>
+                  ))}
+                </div>
+                {committee.agenda && (
+                  <p className="mb-4 text-lg text-center">{committee.agenda}</p>
+                )}
               </div>
             ))}
           </div>
-          {committee.agenda && (
-            <p className="mb-4 text-lg text-center">{committee.agenda}</p>
-          )}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Venue Section */}
       <section id="venue" className="py-20 px-4 relative">
